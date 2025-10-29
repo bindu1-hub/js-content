@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Hello, World!")
+        var c = {
+             name:"Bindu",
+             age:20,
+             city:"Hyderabad",
+             country:"India",
+             profession:"Student",
+             emailid:"bindubollam610gmail.com" 
+          }
+        console.log(c.name,c.age,c.city,c.country,c.profession,c.emailid)
+        var a = prompt("Enter your email:")
+        var b = prompt("enter your password")
+        if(a == "bindubollam610gmail.com" && b == "bindu123") {
+            document.write("you are successfully logged in")
+        }
+        else{
+            document.write("unable to login")
+        }
+      const Demo = () => {
+        document.getElementById("myimage").src = "tiger.jpeg"
+     }
+        const food = () => {
+            document.getElementById("myfood").src = "food 2.jpg"
+        }
+        const mine = () => {
+            document.getElementById("foodmy").src = "img 8.jpg"
+        }
+        const picture = () => {
+            document.getElementById("rice").innerHTML = "<img src='food 2.jpg' alt='img 3' width='200' height='200'>"
+        }
+        const buttoncolor = () => {
+            document.getElementById("changecolor").style.backgroundColor = "black"
+               document.getElementById("changecolor").style.color = "white" 
+        }
+        const buttoncolor1 = () => {
+            document.getElementById("changecolor").style.backgroundColor = "white"
+               document.getElementById("changecolor").style.color = "black" 
+        }
+</script>
+</head>
+<body>
+    <var>
+        <h1>Object in JavaScript</h1>
+        <p>Name: Bindu</p>
+        <p>Age: 20</p>
+        <p>City: Hyderabad</p>
+        <p>Country: India</p>
+        <p>Profession: Student</p>
+        <p>Email ID: bindubollam610gmail.com</p>
+    </var>
+    <img id="myimage" src="image.webp" alt="img 1" width="200" height="200">
+    <button onclick="Demo()">Change image</button>
+    <img  id ="myfood" src="food 1.jpeg" alt="img 2" width="200" height="200">
+    <button onclick="food()">Change food</button>
+    <img id = "foodmy" src="img 10.jpg" alt="img 3" width="200" height="200">
+    <button onclick="mine()">change food</button>
+    <p id="rice">CHICKEN BIRYANI</p>
+    <button onclick="picture()">change to pic</button>
+    <body id ="changecolor">
+        <p id="text">Hello World</p>
+        <h2>Change Background and Text Color</h2>
+        <button onclick="buttoncolor()">Dark mode</button>
+           <button onclick="buttoncolor1()">Light mode</button>
+    </body>
+</body>
+</html>
